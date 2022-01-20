@@ -1,0 +1,548 @@
+.el-dialog{
+	border:  2px solid rgba(96,96,96,1);
+}
+.el-dialog .el-dialog__body{
+	padding: 0;
+}
+.el-dialog .el-dialog__header{
+  position: relative;
+  padding: 5px 8px;
+	background: #F2F2F2;
+  margin-bottom: 5px;
+  color: #000000;
+  &::before{
+    content: 'Esc Key';
+    position: absolute;
+    font-size: 12px;
+    top: -2px;
+    right: 57px;
+    color: #000;
+  }
+}
+.el-dialog .el-dialog__headerbtn{
+  background: url("../../../static/close.jpg")no-repeat;
+  width: 43px;
+	top: 0px;
+  right: 8px;
+  i{
+    &::before{
+      content: '';
+    }
+  }
+}
+.el-dialog .el-dialog__title{
+	font-size: 13px;
+  color: #333;
+  font-weight: 700;
+}
+// 提示弹窗
+.dataSend{
+  .el-dialog__body{
+    height: auto!important;
+    .ser_list{
+      overflow: hidden;
+      *zoom: 1;
+      padding: 0px 20px;
+      line-height: 30px;
+      padding-bottom: 40px;
+    }
+  }
+}
+.confirmModel{
+  .el-dialog{
+    top: 15%;
+  }
+  .el-dialog__body{
+    height: 220px;
+  }
+  .model-main{
+    background: #f2f2f2;
+    color: red;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 15px;
+    max-height: 300px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .model-input {
+    padding: 20px;
+    span{
+      display: inline-block;
+      width: 60px;
+      font-size: 14px;
+      color:#000;
+    }
+    input {
+      height: 30px;
+      line-height: 30px;
+      padding: 0 12px;
+      width: 300px;
+      border: 1px solid #aaa;
+    }
+
+  }
+  .model-footer-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    button{
+      width: 60px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0;
+      margin-left: 10px;
+      text-align: center;
+      // border-radius: 3px;
+      // border: 1px solid #dcdfe6;
+      cursor: pointer;
+      // &:first-child{
+      //   background: #fff;
+      //   color: #606266;
+      // }
+      // &:last-child{
+      //   color: #fff;
+      //   background-color: #409EFF;
+      //   border-color: #409EFF;
+      // }
+    }
+  }
+}
+
+
+.confirmModel1 .el-dialog__body {
+  height: 120px;
+  padding: 0 5%;
+
+  .el-input{
+    margin-top: 20px;
+    height: 40px;
+    .el-input__inner{
+      height: 40px;
+      line-height: 40px;
+    }
+  }
+}
+
+// 浅蓝色字体
+.color-blue_c{
+	color: #0066cc;
+}
+// 浅绿色字体
+.color_green_c{
+	color: #51A35D;
+}
+.color-green{
+  color: green;
+}
+.color-blue{
+	color: blue;
+}
+.color-red{
+	color: red;
+}
+.color-black{
+  color: #000;
+}
+// 防止颜色被覆盖
+td.color-red{
+  color: red !important;
+}
+// input 默认聚焦的样式
+input[type=number] {
+   -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+body{
+  font-family: Microsoft YaHei,微软雅黑,黑体,宋体,Microsoft JhengHei,华文细黑,STHeiti,MingLiu;
+}
+
+.text_center{
+	text-align: center;
+}
+.flex-text-center{
+	justify-content: center;
+}
+
+// 按钮
+.commit_btn{
+	padding: 2px 10px;
+	cursor: pointer;
+}
+// 原生按钮样式
+a.buttonCss,.buttonCss{
+  padding: 4px;
+  line-height: 20px;
+  color: buttontext;
+  white-space: nowrap;
+  font-size: 13px;
+  -webkit-appearance: button;
+}
+a.buttonCss:link,a.buttonCss:visited{
+  color: buttontext;
+}
+a.buttonCss:hover{
+  text-decoration: none;
+}
+.inline-flex{
+  display: inline-flex;
+  align-items: center;
+}
+
+// 小型搜索按钮
+.search_btn{
+	padding: 0 5px;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+// 分页padding
+.padding_page{
+	padding: 5px;
+}
+.formLi_img{
+	#el-upload1{
+		height: 100%;
+		div{
+			width: 100%;
+			height: 100%;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+	}
+}
+
+// 表单类
+.form_container{
+  height: 500px;
+  padding: 0 10px;
+  overflow: auto;
+  box-sizing: border-box;
+// 头部
+.formBox_title{
+    height: 25px;
+    line-height: 25px;
+    background: url(../../../static/images/new/headtd.jpg) repeat-x left center;
+    // background: -webkit-linear-gradient(left, #2DA4DD, #0E8CC7);
+    // background: linear-gradient(to right, #2DA4DD, #0E8CC7);
+    font-size: 13px;
+    color: #fff;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+  ul{
+    border: 1px solid #ccc;
+    border-bottom: 0;
+    li{
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+      padding: 4px 0;
+      color: #000;
+      input,select{
+        height: 28px;
+        line-height: 28px;
+        padding:0 10px;
+      }
+      .formLi_title{
+        width: 110px;
+        padding-left: 5px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .formLi_content{
+        width: 300px;
+        margin-right: 20px;
+        input{
+          width: 100%;
+        }
+      }
+      .formLi_hint{
+        font-size: 12px;
+      }
+      // 提交按钮
+      .form_commit{
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        padding: 0 20px;
+        text-align: center;
+        // background: #EAEAEA;
+        background: -webkit-linear-gradient(left, #efefef, #eee);
+        background: linear-gradient(to right, #efefef, #eee);
+        border: 1px solid #aaa;
+        margin: 2px auto;
+      }
+    }
+  }
+}
+//代理编辑框
+.agentEx .formLi_content-quill{
+  background: #fff;
+  width: 800px;
+  .quill-editor{
+    .ql-container{
+      height: 400px;
+    }
+  }
+}
+// 内容box 盒子
+.admin_container{
+  margin: 10px 5px;
+  border: 1px solid #ccc;
+  .admin_header{
+    background: #f6f6f6;
+    color: #000;
+    font-weight: bold;
+    padding:3px 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+  }
+  .admin_content{
+    padding: 20px 20px 50px;
+    background: #f2f2f2;
+  }
+}
+// 优惠活动  设置
+.admin_content{
+  // 单行设置
+  .admin_list_li{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    div{
+      padding: 0 5px;
+      input{
+        margin:0 5px;
+        height: 28px;
+        padding-left: 5px;
+      }
+    }
+  }
+  // 设置按钮
+  .admin_list_btn{
+    padding: 10px 0;
+    button{
+      margin-left: 100px;
+      padding:2px 10px;
+      margin-top: 10px;
+    }
+  }
+  // 添加列表
+  .admin_list_addlist{
+    font-size: 14px;
+    button{
+      padding: 0 10px;
+      height: 28px;
+    }
+
+    ul{
+      margin-top: 10px;
+      li{
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        span{
+          margin:0 10px;
+        }
+        input{
+          height: 28px;
+          padding-left: 5px;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+}
+// 设置富文本编辑框高度
+.formLi_content-quill{
+	.quill-editor{
+		.ql-container{
+			height: 250px;
+		}
+	}
+}
+// 设置element自带的input框
+.formLi_content{
+  .el-input{
+    input{
+      height: 35px;
+    }
+  }
+  i{
+    margin-top: -2px;
+  }
+}
+.formLi_content{
+  input{
+    border: 1px solid #aaa;
+  }
+  .data_input{
+    input{
+      border: 1px solid #aaa;
+    }
+  }
+}
+// 弹窗内容区样式
+.model_table{
+  padding: 5px;
+  overflow: auto;
+  box-sizing: border-box;
+  &.table_500{
+    height: 500px;
+  }
+  &.table_550{
+    height: 550px;
+  }
+  table{
+    margin: 0;
+    width: 100%;
+    min-width: auto;
+    tr.odd>td{
+      margin: 0;
+      padding: 4px;
+      vertical-align: middle;
+      &.pointer{
+        cursor: pointer;
+      }
+    }
+    .info_none{
+      td{
+        text-align: center;
+      }
+    }
+    .info_page{
+      td{
+        padding: 6px;
+      }
+    }
+  }
+}
+// 表格nav
+.table{
+  tr.nav{
+    td>input{
+      // margin-top: -3px;
+      padding: 0 4px;
+      margin-right: 3px;
+      margin-bottom: 2px;
+    }
+  }
+}
+// 通知提示弹窗
+.form_no{
+  height: 300px;
+  h3{
+    text-align:center;
+    padding:10px 0;
+  }
+  div{
+    text-indent: 25px;
+  }
+}
+
+.modelList_container .container{
+  height: 100%;
+  overflow: auto;
+}
+// 代理弹窗表格
+.commonModel_container{
+  .table{
+    margin:0 5px 10px;
+  }
+  .userModel-content{
+    top: 0 !important;
+  }
+}
+
+.userInfo-model{
+  .userModel-title{
+    position: relative;
+    /*width: 100%;*/
+    height: 36px;
+    background: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:0 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #ccc;
+  &:before{
+     position: absolute;
+     content: 'Esc Key';
+     color: #000;
+     right: 57px;
+     top: -2px;
+   }
+  .close-span{
+    position: absolute;
+    right: 10px;
+    top: 0;
+    background: url(../../../static/close.jpg) no-repeat;
+    width: 43px;
+    height: 20px;
+    cursor: pointer;
+  }
+  }
+  .container{
+    overflow: auto;
+    height: 715px;
+  }
+  .userModel-bg{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    opacity: .5;
+  }
+  .userModel-content{
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    margin-left: -600px;
+    width: 1200px;
+    height: 760px;
+    background: #fff;
+    border: 2px solid #606060;
+    box-sizing: border-box;
+  }
+}
+// 秘钥宽度设置
+.key_account{
+  width: 260px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.export-data-content {
+
+}
+.member_name{
+  width: 100px;
+  .el-checkbox__label{
+    width: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+  }
+}
+.kj-list{
+  .el-dialog{
+    height: 650px;
+  }
+}

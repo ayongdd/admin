@@ -1,0 +1,442 @@
+.el-dialog {
+  border: 2px solid #606060;
+}
+.el-dialog .el-dialog__body {
+  padding: 0;
+}
+.el-dialog .el-dialog__header {
+  position: relative;
+  padding: 5px 8px;
+  background: #F2F2F2;
+  margin-bottom: 5px;
+  color: #000000;
+}
+.el-dialog .el-dialog__header::before {
+  content: 'Esc Key';
+  position: absolute;
+  font-size: 12px;
+  top: -2px;
+  right: 57px;
+  color: #000;
+}
+.el-dialog .el-dialog__headerbtn {
+  background: url("../../../static/close.jpg") no-repeat;
+  width: 43px;
+  top: 0px;
+  right: 8px;
+}
+.el-dialog .el-dialog__headerbtn i::before {
+  content: '';
+}
+.el-dialog .el-dialog__title {
+  font-size: 13px;
+  color: #333;
+  font-weight: 700;
+}
+.dataSend .el-dialog__body {
+  height: 375px!important;
+}
+.dataSend .el-dialog__body .ser_list {
+  padding: 0px 20px;
+  line-height: 30px;
+}
+.confirmModel .el-dialog {
+  top: 15%;
+}
+.confirmModel .el-dialog__body {
+  height: 220px;
+}
+.confirmModel .model-main {
+  background: #f2f2f2;
+  color: red;
+  font-weight: bold;
+  padding: 15px;
+  font-size: 15px;
+  max-height: 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.confirmModel .model-input {
+  padding: 20px;
+}
+.confirmModel .model-input span {
+  display: inline-block;
+  width: 60px;
+  font-size: 14px;
+  color: #000;
+}
+.confirmModel .model-input input {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 12px;
+  width: 300px;
+  border: 1px solid #aaa;
+}
+.confirmModel .model-footer-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+}
+.confirmModel .model-footer-btn button {
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0;
+  margin-left: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.color-blue_c {
+  color: #0066cc;
+}
+.color_green_c {
+  color: #51A35D;
+}
+.color-green {
+  color: green;
+}
+.color-blue {
+  color: blue;
+}
+.color-red {
+  color: red;
+}
+.color-black {
+  color: #000;
+}
+td.color-red {
+  color: red !important;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+body {
+  font-family: Microsoft YaHei,微软雅黑,黑体,宋体,Microsoft JhengHei,华文细黑,STHeiti,MingLiu;
+}
+.text_center {
+  text-align: center;
+}
+.flex-text-center {
+  justify-content: center;
+}
+.commit_btn {
+  padding: 2px 10px;
+  cursor: pointer;
+}
+a.buttonCss,
+.buttonCss {
+  padding: 4px;
+  line-height: 20px;
+  color: buttontext;
+  white-space: nowrap;
+  font-size: 13px;
+  -webkit-appearance: button;
+}
+a.buttonCss:link,
+a.buttonCss:visited {
+  color: buttontext;
+}
+a.buttonCss:hover {
+  text-decoration: none;
+}
+.inline-flex {
+  display: inline-flex;
+  align-items: center;
+}
+.search_btn {
+  padding: 0 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.padding_page {
+  padding: 5px;
+}
+.formLi_img #el-upload1 {
+  height: 100%;
+}
+.formLi_img #el-upload1 div {
+  width: 100%;
+  height: 100%;
+}
+.formLi_img #el-upload1 img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.form_container {
+  height: 500px;
+  padding: 0 10px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+.form_container .formBox_title {
+  height: 25px;
+  line-height: 25px;
+  background: url(../../../static/images/new/headtd.jpg) repeat-x left center;
+  font-size: 13px;
+  color: #fff;
+  padding-left: 5px;
+  font-weight: bold;
+}
+.form_container ul {
+  border: 1px solid #ccc;
+  border-bottom: 0;
+}
+.form_container ul li {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 4px 0;
+  color: #000;
+}
+.form_container ul li input,
+.form_container ul li select {
+  height: 28px;
+  line-height: 28px;
+  padding: 0 10px;
+}
+.form_container ul li .formLi_title {
+  width: 110px;
+  padding-left: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.form_container ul li .formLi_content {
+  width: 300px;
+  margin-right: 20px;
+}
+.form_container ul li .formLi_content input {
+  width: 100%;
+}
+.form_container ul li .formLi_hint {
+  font-size: 12px;
+}
+.form_container ul li .form_commit {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0 20px;
+  text-align: center;
+  background: -webkit-linear-gradient(left, #efefef, #eee);
+  background: linear-gradient(to right, #efefef, #eee);
+  border: 1px solid #aaa;
+  margin: 2px auto;
+}
+.agentEx .formLi_content-quill {
+  background: #fff;
+  width: 800px;
+}
+.agentEx .formLi_content-quill .quill-editor .ql-container {
+  height: 400px;
+}
+.admin_container {
+  margin: 10px 5px;
+  border: 1px solid #ccc;
+}
+.admin_container .admin_header {
+  background: #f6f6f6;
+  color: #000;
+  font-weight: bold;
+  padding: 3px 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+}
+.admin_container .admin_content {
+  padding: 20px 20px 50px;
+  background: #f2f2f2;
+}
+.admin_content .admin_list_li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.admin_content .admin_list_li div {
+  padding: 0 5px;
+}
+.admin_content .admin_list_li div input {
+  margin: 0 5px;
+  height: 28px;
+  padding-left: 5px;
+}
+.admin_content .admin_list_btn {
+  padding: 10px 0;
+}
+.admin_content .admin_list_btn button {
+  margin-left: 100px;
+  padding: 2px 10px;
+  margin-top: 10px;
+}
+.admin_content .admin_list_addlist {
+  font-size: 14px;
+}
+.admin_content .admin_list_addlist button {
+  padding: 0 10px;
+  height: 28px;
+}
+.admin_content .admin_list_addlist ul {
+  margin-top: 10px;
+}
+.admin_content .admin_list_addlist ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.admin_content .admin_list_addlist ul li span {
+  margin: 0 10px;
+}
+.admin_content .admin_list_addlist ul li input {
+  height: 28px;
+  padding-left: 5px;
+  box-sizing: border-box;
+}
+.formLi_content-quill .quill-editor .ql-container {
+  height: 250px;
+}
+.formLi_content .el-input input {
+  height: 35px;
+}
+.formLi_content i {
+  margin-top: -2px;
+}
+.formLi_content input {
+  border: 1px solid #aaa;
+}
+.formLi_content .data_input input {
+  border: 1px solid #aaa;
+}
+.model_table {
+  padding: 5px;
+  overflow: auto;
+  box-sizing: border-box;
+}
+.model_table.table_500 {
+  height: 500px;
+}
+.model_table.table_550 {
+  height: 550px;
+}
+.model_table table {
+  margin: 0;
+  width: 100%;
+  min-width: auto;
+}
+.model_table table tr.odd > td {
+  margin: 0;
+  padding: 4px;
+  vertical-align: middle;
+}
+.model_table table tr.odd > td.pointer {
+  cursor: pointer;
+}
+.model_table table .info_none td {
+  text-align: center;
+}
+.model_table table .info_page td {
+  padding: 6px;
+}
+.table tr.nav td > input {
+  padding: 0 4px;
+  margin-right: 3px;
+  margin-bottom: 2px;
+}
+.form_no {
+  height: 300px;
+}
+.form_no h3 {
+  text-align: center;
+  padding: 10px 0;
+}
+.form_no div {
+  text-indent: 25px;
+}
+.modelList_container .container {
+  height: 100%;
+  overflow: auto;
+}
+.commonModel_container .table {
+  margin: 0 5px 10px;
+}
+.commonModel_container .userModel-content {
+  top: 0 !important;
+}
+.userInfo-model .userModel-title {
+  position: relative;
+  /*width: 100%;*/
+  height: 36px;
+  background: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+}
+.userInfo-model .userModel-title:before {
+  position: absolute;
+  content: 'Esc Key';
+  color: #000;
+  right: 57px;
+  top: -2px;
+}
+.userInfo-model .userModel-title .close-span {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  background: url(../../../static/close.jpg) no-repeat;
+  width: 43px;
+  height: 20px;
+  cursor: pointer;
+}
+.userInfo-model .container {
+  overflow: auto;
+  height: 715px;
+}
+.userInfo-model .userModel-bg {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  opacity: .5;
+}
+.userInfo-model .userModel-content {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -600px;
+  width: 1200px;
+  height: 760px;
+  background: #fff;
+  border: 2px solid #606060;
+  box-sizing: border-box;
+}
+.key_account {
+  width: 260px !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.member_name {
+  width: 100px;
+}
+.member_name .el-checkbox__label {
+  width: 80px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.kj-list .el-dialog {
+  height: 650px;
+}
